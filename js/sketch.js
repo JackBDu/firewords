@@ -12,11 +12,11 @@ var textsConverted = []; // array of converted texts
 var querystring = findGetParameter("msg"); // the whole string after '?' in url
 
 if (querystring) {
-  // modifies the title with the query string
-  document.title = "Firewords - "+querystring;
   // split the string into an array with a space ' '
   // decodeURI decodes (converts to a normal string) the uri
   texts = querystring.split(' ');
+  // modifies the title with first text
+  document.title = "Firewords - "+texts[0];
 } else {                // when querystring is empty ("")
   texts = ["Hello", "Bonjour", "Hola", "Ciao", "Hallo", "Здравствуйте", "你好", "こんにちは", "안녕하세요", "مرحبا", "नमस्ते"];
   shuffle(texts);       // shuffles the order of the texts
