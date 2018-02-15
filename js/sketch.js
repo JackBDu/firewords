@@ -285,7 +285,7 @@ function findGetParameter(parameterName) {
 }
 
 if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
-  var titles = ['原来烟花还可以这么玩...', '我想用烟花对你说...']
+  var titles = ['原来烟花还可以这么玩...', '过年啦，我想用烟花对你说...', '新年新玩法，用烟花拜年...']
   document.title = titles[Math.floor((Math.random() * 2))];
 }
 
